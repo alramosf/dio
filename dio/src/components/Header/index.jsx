@@ -1,15 +1,14 @@
 import React from 'react'
+import logo from '../../assets/logo-dio.png'
 import { Button } from '../Button'
 
 import {
     BuscarInputContainer,
-    Column,
     Container,
     Input,
     Menu,
     MenuRight,
     Row,
-    UserPicture,
     Wrapper
 } from './styles'
 
@@ -19,7 +18,7 @@ const Header = () => {
     <Wrapper>
         <Container>
             <Row>
-                <img src={} alt="Logo da dio"/>
+                <img src={ logo } alt="Logo da dio"/>
                 <BuscarInputContainer>
                     <Input placeholder='Buscar...'/>
                 </BuscarInputContainer>
