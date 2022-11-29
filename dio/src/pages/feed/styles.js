@@ -34,3 +34,4 @@ export const Column = styled.div`
     flex:${({flex}) => flex};
     padding-right: 24px;
 `
+
