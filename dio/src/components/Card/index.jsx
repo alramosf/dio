@@ -6,10 +6,10 @@ import {CardContainer,Content,HasInfo,ImageBackground,PostInfo,UserInfo,UserPict
 const Card = () => {
   return (
     <CardContainer>
-        <ImageBackground/>
+        <ImageBackground src="https://hermes.digitalinnovation.one/articles/cover/374a8bd9-c2e3-4e9a-89f0-20773779e6e6.png"/>
         <Content>
             <UserInfo>
-                <UserPicture/>
+                <UserPicture src="https://avatars.githubusercontent.com/u/106263609?v=4"/>
                 <div>
                     <h4>Alexandre Ramos</h4>
                     <p>Há 8 minutos</p>

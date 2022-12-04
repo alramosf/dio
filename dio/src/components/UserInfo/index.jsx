@@ -1,4 +1,4 @@
-import React from 'react'
+ import React from 'react'
 
 import { Container, NameText, Progress, UserPicture} from './styles';
 

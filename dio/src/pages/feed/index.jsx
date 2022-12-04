@@ -1,9 +1,9 @@
 import React from 'react'
+
+
 import { Card } from '../../components/Card';
 import { UserInfo } from '../../components/UserInfo';
-
 import { Header } from '../../components/Header';
-
 import { Container, Column, Title, TitleHighlight } from './styles';
 
 const Feed = () => {
@@ -30,6 +30,7 @@ const Feed = () => {
                 <UserInfo nome="Alexandre Ramos" image="https://avatars.githubusercontent.com/u/106263609?v=4" percentual={65}/>
                 <UserInfo nome="Alexandre Ramos" image="https://avatars.githubusercontent.com/u/106263609?v=4" percentual={45}/>
                 <UserInfo nome="Alexandre Ramos" image="https://avatars.githubusercontent.com/u/106263609?v=4" percentual={72}/>
+                <UserInfo nome="Alexandre Ramos" image="https://avatars.githubusercontent.com/u/106263609?v=4" percentual={98}/>
             </Column>
         </Container>
     </>
