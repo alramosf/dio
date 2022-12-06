@@ -15,7 +15,7 @@ const Input = ({leftIcon, name, control, errorMessage, ...rest}) => {
         render={({ field }) => <InputText {...field} {...rest} />}
         />
     </InputContainer>
-    {errorMessage ? <ErrorText>{errorMessage}</ErrorText> : null}
+    {errorMessage ? <ErrorText>{errorMessage}</ErrorText> : null }
     </>
   )
 }
