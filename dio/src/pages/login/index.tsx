@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 import { useForm } from "react-hook-form";
 import { useNavigate } from 'react-router-dom'
 import { MdEmail, MdLock } from 'react-icons/md'
@@ -12,6 +10,8 @@ import { Input } from '../../components/Input';
 
 import { api } from "../../services/api"
 import { Column, Container, CriarText, EsqueciText, Row, SubTitleLogin, Title, TitleLogin, Wrapper } from './styles';
+import { IFormData } from './types';
+import React from "react";
 const Login = () => {
 
     const schema = yup.object({
@@ -24,13 +24,13 @@ const Login = () => {
     const navigate = useNavigate();
     
     
-    const { control, handleSubmit, formState: { errors } } = useForm({
+    const { control, handleSubmit, formState: { errors } } = useForm<IFormData>({
         resolver: yupResolver(schema),
         mode: 'onChange',
     });
 
 
-    const onSubmit = async formData => {
+    const onSubmit = async (formData: IFormData) => {
         try{
             const { data } = await api.get(`users?email=${formData.email}&senha=${formData.password}`);
             if(data.length === 1){
